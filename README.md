@@ -65,6 +65,13 @@ curl -k -H 'X-Authentication:0cwS41gJS5lDIXAs5kWIFK0N9ITfYYt1Mmh0-anA3Fv4' https
   }
 ```
 
+my result:
+```
+"result" : {
+  "environments" : [ "dev", "production" ]
+}
+```
+
 ## Limitations
 
 Under heavy development. Interface in flux and not guaranteed.
