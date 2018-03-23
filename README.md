@@ -12,11 +12,7 @@ puppet task run pwp::get_environments --nodes <master_certname> --format json
 puppet task run pwp::get_environments --nodes <master_certname> --format json | jq '.items | .[] | .results'
 ```
 
-```
-curl -k -H 'X-Authentication:<RBAC_token>' https://<master_certname>:8143/orchestrator/v1/command/task -d @scope.json -X POST
-```
-
-example scope.json
+example scope.json (task and target node):
 ```
 {
   "environment" : "production",
@@ -27,6 +23,10 @@ example scope.json
     "nodes" : ["<master_certname>"]
   }
 }
+```
+
+```
+curl -k -H 'X-Authentication:<RBAC_token>' https://<master_certname>:8143/orchestrator/v1/command/task -d @scope.json -X POST
 ```
 
 example response (job 87):
