@@ -1,17 +1,18 @@
 
 # pwp (provisioning with puppet)
 
-### Setup
+## Setup
 
 Put this module on your Puppet master.
 
 ## Usage
 
+### CLI
 ```
 puppet task run pwp::get_environments --nodes <master_certname> --format json
 puppet task run pwp::get_environments --nodes <master_certname> --format json | jq '.items | .[] | .results'
 ```
-
+### API
 example scope.json (task and target node):
 ```
 {
