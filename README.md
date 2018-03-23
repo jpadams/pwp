@@ -1,5 +1,5 @@
 
-# pwp
+# pwp (provisioning with puppet)
 
 ### Setup
 
