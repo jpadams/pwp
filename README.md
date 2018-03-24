@@ -4,6 +4,8 @@
 ## Setup
 
 Put this module on your Puppet master.
+Get an RBAC token for a user with permission to run the tasks you'd like to use.
+https://puppet.com/docs/pe/2017.3/rbac/rbac_token_auth_intro.html#token-based-authentication
 
 ## Usage
 
@@ -43,7 +45,7 @@ POST
 
 followup to get node results for job:
 ```
-curl -k -H 'X-Authentication:0cwS41gJS5lDIXAs5kWIFK0N9ITfYYt1Mmh0-anA3Fv4' https://<master_certname>:8143/orchestrator/v1jobs/87/nodes
+curl -k -H 'X-Authentication:<RBAC_token>' https://<master_certname>:8143/orchestrator/v1jobs/87/nodes
 {
   "items" : [ {
     "finish_timestamp" : "2018-03-23T21:37:20Z",
