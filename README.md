@@ -3,9 +3,9 @@
 
 ## Setup
 
-Put this module on your Puppet master.
-Get an RBAC token for a user with permission to run the tasks you'd like to use.
-https://puppet.com/docs/pe/2017.3/rbac/rbac_token_auth_intro.html#token-based-authentication
+* Put this module on your Puppet master.
+* Get an RBAC token for a user with permission to run the tasks you'd like to use.
+* https://puppet.com/docs/pe/2017.3/rbac/rbac_token_auth_intro.html#token-based-authentication
 
 ## Usage
 
