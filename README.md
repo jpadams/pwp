@@ -10,9 +10,14 @@
 ## Usage
 
 ### CLI
+##### get_environments
 ```
 puppet task run pwp::get_environments --nodes <master_certname> --format json
 puppet task run pwp::get_environments --nodes <master_certname> --format json | jq '.items | .[] | .results'
+```
+##### purge_nodes
+```
+puppet task run pwp::purge_nodes agent_certnames=agent1,agent2,agent3 --nodes <master_certname> --format json
 ```
 ### API
 example scope.json (task and target node):
